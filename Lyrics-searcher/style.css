@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f3f3f3;
+    min-height: 100vh;
+    font-family: 'quicksand';
+}
+
+h1, h3{
+    font-size: clamp(1.4rem, 2.5vw, 3rem);
+    margin-block: 2rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: lightcoral;
+    letter-spacing: .1rem;
+}
+
+.heroWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 20vh;
+    padding: 4em 0;
+    background: linear-gradient(to right, #00000052, #00000057), url('../pawel-czerwinski-kOfVxiO1LOk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+form{
+    width: 100%;
+}
+.inputWrapper{
+    width: 90%;
+    margin: auto;
+    max-width: 22rem;
+    background: crimson;
+    height: 2rem;
+    position: relative;
+    display: flex;
+}
+input{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: block;
+    margin: 0;
+    border: none;
+    outline: none;
+    flex-basis: 100%;
+    font-family: 'montserrat light';
+}
+.submit{
+    background: transparent;
+    right: 0;
+    color: white;
+    padding-inline: .9rem;
+    background: rgb(39, 136, 168);
+}
+.search{
+    left: 0;
+    width: calc(100% - 1rem);
+    padding-left: 1rem;
+}
+input::placeholder{
+    font-style: italic;
+}
+
+.songSection{
+    width: 100%;
+    max-width: 26rem;
+    margin: 3rem auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    font-family: 'montserrat light';
+}
+ul li{
+    padding: .7rem .6rem;
+    box-shadow: 1px 1px 2px 1px rgba(11, 18, 105, 0.411);
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0rem;
+}
+li span{
+    display: block;
+}
