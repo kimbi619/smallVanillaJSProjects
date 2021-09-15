@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h2>WordBeater</h2>
+    </header>
+    <div class="main">
+        <div class="level">
+            <p>Type the word bellow</p>
+            <select name="dificuilty" id="dificuilty">
+                <option value="easy">easy</option>
+                <option value="medium" default>medium</option>
+                <option value="hard">hard</option>
+            </select>
+        </div>
+
+        <div class="gameScreen">
+            <div class="gamePlay">
+                <div class="title">
+                    <h2><pre>💻   speed typer  💻</pre></h2>
+                </div>
+                <div class="time-score">
+                    <p>Time left: <span class="time">0</span></p>
+                    <p>score: <span class="score">12</span></p>
+                </div>
+                <div class="wordSection">
+                    <p>Type the following</p>
+                    <h1 class="text">Pies</h1>
+                </div>
+                <input class="inputField" type="text" autofocuss>
+            </div>
+
+            <div class="gameOver">
+                <h1>Time ran out</h1>
+                <p>final score is <span class="finalScore">12</span></p>
+                <button class="replay btn">replay</button>
+            </div>
+
+        </div>
+    </div>
+    <button class="btn toggle-header"><pre>   </pre></button>
+    <script src="main.js"></script>
+</body>
+</html>

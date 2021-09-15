@@ -1,0 +1,112 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    min-height: 100vh;
+    background-color: #2C3E50;
+    color: white;
+    font-family: 'roboto';
+}
+
+header{
+    background-color: #1F2B38;
+    text-align: center;
+    padding-block: 1rem;
+    font-size: 1.3rem;
+}
+.main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.gameScreen, .level{
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 1px 1px 6px 2px #1f2b38a8;
+}
+.level{
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 0;
+}
+select{
+    background-color: #1F2B38;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.3rem;
+    width: 200px;
+    padding: .5rem;
+    text-transform: capitalize;
+}
+.title{
+    width: 80%;
+    background-color: #1F2B38;
+    margin: 2rem auto;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.time-score{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    margin:  0 auto 1rem;
+}
+.wordSection{
+    text-align: center;
+}
+.inputField{
+    display: block;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 300px;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+
+.gamePlay{
+    display: block;
+}
+.gameOver{
+    display: none;
+    text-align: center;
+    padding-block: 2.2rem;
+}
+.gameOver p{
+    margin: 1rem 0;
+}
+.finalScore{
+    color: green;
+}
+.btn{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 2px 2px 2px #2C3E50;
+    width: 4rem;
+    border-radius: 30px;
+}
+.replay{
+    position: static;
+    font-family: 'montserrat light';
+    padding: 0.3rem 2rem;
+    width: auto;
+}
+
+
+.hideHeader{
+    display: none;
+}
